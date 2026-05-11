@@ -1,0 +1,46 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        project:
+          [
+            '07-Funtions',
+            '08-useState',
+            '09-useState-Adv',
+            '10-form-handling',
+            '11-two_way_binding',
+            '12-Notes_App',
+            'ui_project',
+          ]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: ./${{ matrix.project }}
+        run: npm ci
+
+      - name: Run ESLint
+        working-directory: ./${{ matrix.project }}
+        run: npm run lint
+        continue-on-error: true
+
+      - name: Build project
+        working-directory: ./${{ matrix.project }}
+        run: npm run build

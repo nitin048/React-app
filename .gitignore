@@ -1,20 +1,51 @@
-# Dependencies
+# ===================================
+# DEPENDENCIES
+# ===================================
 node_modules/
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.pnp
+.pnp.js
 
-# Build outputs
+# ===================================
+# BUILD OUTPUTS
+# ===================================
 dist/
+dist-ssr/
 build/
 *.local
+.output/
+.vercel/
+.netlify/
 
-# Environment variables
+# ===================================
+# ENVIRONMENT & SECRETS (CRITICAL!)
+# ===================================
 .env
+.env.*
+!.env.example
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.env.production
+*.pem
+*.key
+*.cert
+*.crt
+secrets.json
+config/secrets.*
 
-# Logs
+# API Keys and Tokens
+**/api-keys.json
+**/credentials.json
+**/*-credentials.json
+**/*.credentials
+
+# ===================================
+# LOGS
+# ===================================
 logs/
 *.log
 npm-debug.log*
@@ -22,11 +53,21 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+.npm/
 
-# Editor directories and files
+# ===================================
+# EDITOR & IDE
+# ===================================
 .vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
 !.vscode/extensions.json
+*.code-workspace
 .idea/
+*.swp
+*.swo
+*~
 .DS_Store
 *.suo
 *.ntvs*
@@ -34,17 +75,59 @@ lerna-debug.log*
 *.sln
 *.sw?
 
-# Kiro settings (optional - remove if you want to share)
+# ===================================
+# KIRO AI SETTINGS
+# ===================================
 .kiro/
 
-# Testing
+# ===================================
+# TESTING
+# ===================================
 coverage/
 *.coverage
+.nyc_output/
+.jest/
+__tests__/__snapshots__/
 
-# Temporary files
+# ===================================
+# TEMPORARY FILES
+# ===================================
 *.tmp
 *.temp
 .cache/
+.parcel-cache/
+.turbo/
+.next/
+.nuxt/
 
-# OS files
+# ===================================
+# OS FILES
+# ===================================
 Thumbs.db
+Desktop.ini
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ===================================
+# BACKUP FILES
+# ===================================
+*.bak
+*.backup
+*.old
+*~
+
+# ===================================
+# DATABASE FILES (if any)
+# ===================================
+*.sqlite
+*.sqlite3
+*.db
+
+# ===================================
+# SECURITY SCAN RESULTS
+# ===================================
+.snyk
+npm-audit.json
+yarn-audit.json

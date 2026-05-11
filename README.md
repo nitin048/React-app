@@ -241,6 +241,50 @@ npm run build
 
 ---
 
+## 🔒 Security & Best Practices
+
+### Security Checks
+
+```bash
+# Check for vulnerabilities
+npm audit
+
+# Fix vulnerabilities automatically
+npm audit fix
+
+# Check outdated packages
+npm outdated
+```
+
+### Environment Variables
+
+**NEVER commit `.env` files!** Use `.env.example` as a template:
+
+```bash
+# Copy the example file
+cp .env.example .env
+
+# Add your actual values to .env
+```
+
+### Before Committing
+
+- ✅ Run `npm run lint` to check code quality
+- ✅ Run `npm run format` to format code
+- ✅ Run `npm audit` to check for vulnerabilities
+- ✅ Ensure no secrets or API keys in code
+- ✅ Check `.gitignore` is working properly
+
+### Important Files
+
+- **SECURITY.md** - Security policies and reporting
+- **CONTRIBUTING.md** - How to contribute safely
+- **CODE_OF_CONDUCT.md** - Community guidelines
+- **.env.example** - Template for environment variables
+- **LICENSE** - MIT License
+
+---
+
 ## 📚 Learning Resources
 
 - [React Documentation](https://react.dev/)
