@@ -14,7 +14,67 @@ A collection of React projects built while learning React fundamentals, hooks, a
 | **10-form-handling**   | Form handling with controlled components      | Forms, events, validation      |
 | **11-two_way_binding** | Two-way data binding patterns                 | Controlled inputs              |
 | **12-Notes_App**       | Complete notes app with CRUD operations       | Full app, state management     |
+| **13-localStorage**    | Working with browser localStorage             | localStorage API, persistence  |
+| **14-API_Calling**     | Fetching data from REST APIs                  | fetch, useEffect, async/await  |
 | **ui_project**         | UI components and page layouts                | Component composition, styling |
+
+---
+
+## 🌐 API Resources
+
+### JSONPlaceholder - Free Fake REST API
+
+For testing and prototyping, we use **JSONPlaceholder**: https://jsonplaceholder.typicode.com/
+
+**Available Endpoints:**
+
+```javascript
+// Users
+GET https://jsonplaceholder.typicode.com/users
+
+// Posts
+GET https://jsonplaceholder.typicode.com/posts
+GET https://jsonplaceholder.typicode.com/posts/1
+POST https://jsonplaceholder.typicode.com/posts
+
+// Comments
+GET https://jsonplaceholder.typicode.com/comments
+
+// Albums
+GET https://jsonplaceholder.typicode.com/albums
+
+// Photos
+GET https://jsonplaceholder.typicode.com/photos
+
+// Todos
+GET https://jsonplaceholder.typicode.com/todos
+```
+
+**Example Usage in React:**
+
+```typescript
+// Fetch users
+const fetchUsers = async () => {
+  const response = await fetch('https://jsonplaceholder.typicode.com/users')
+  const data = await response.json()
+  console.log(data)
+}
+
+// Fetch posts
+const fetchPosts = async () => {
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts')
+  const data = await response.json()
+  console.log(data)
+}
+```
+
+**Features:**
+
+- ✅ No authentication required
+- ✅ CORS enabled
+- ✅ Supports GET, POST, PUT, PATCH, DELETE
+- ✅ Returns realistic fake data
+- ✅ Perfect for learning and testing
 
 ---
 
