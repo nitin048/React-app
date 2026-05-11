@@ -1,0 +1,30 @@
+.box{
+    height: 50em;
+    width: 50em;
+    background-color: red;
+}
+.page1{
+    height: 100em;
+    width: 100em;
+    background-color: bisque;
+}
+.page2{
+    height: 100em;
+    width: 100em;
+    background-color: blue;
+}
+.page3{
+    height: 100em;
+    width: 100em;
+    background-color: green;
+}
+.page4{
+    height: 100em;
+    width: 100em;
+    background-color: yellow;
+}
+.page5{
+    height: 100em;
+    width: 100em;
+    background-color: gray;
+}

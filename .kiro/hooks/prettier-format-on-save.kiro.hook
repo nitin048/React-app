@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "name": "Prettier Format on Save",
+  "description": "Automatically formats TypeScript, JavaScript, CSS, and JSON files with Prettier when saved",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "12-Notes_App/src/**/*.{ts",
+      "tsx",
+      "js",
+      "jsx",
+      "css",
+      "json}"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "run automatically"
+  },
+  "workspaceFolderName": "reactLearning",
+  "shortName": "prettier-format-on-save"
+}
