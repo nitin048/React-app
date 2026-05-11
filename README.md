@@ -53,18 +53,45 @@ GET https://jsonplaceholder.typicode.com/todos
 **Example Usage in React:**
 
 ```typescript
-// Fetch users
+// Using fetch API
 const fetchUsers = async () => {
   const response = await fetch('https://jsonplaceholder.typicode.com/users')
   const data = await response.json()
   console.log(data)
 }
 
-// Fetch posts
+// Using Axios (Recommended)
+import axios from 'axios'
+
+const fetchUsers = async () => {
+  const response = await axios.get('https://jsonplaceholder.typicode.com/users')
+  console.log(response.data)
+}
+
+// Fetch posts with Axios
 const fetchPosts = async () => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts')
-  const data = await response.json()
-  console.log(data)
+  try {
+    const response = await axios.get(
+      'https://jsonplaceholder.typicode.com/posts'
+    )
+    console.log(response.data)
+  } catch (error) {
+    console.error('Error fetching posts:', error)
+  }
+}
+
+// POST request with Axios
+const createPost = async () => {
+  const newPost = {
+    title: 'My Post',
+    body: 'This is my post content',
+    userId: 1,
+  }
+  const response = await axios.post(
+    'https://jsonplaceholder.typicode.com/posts',
+    newPost
+  )
+  console.log(response.data)
 }
 ```
 
@@ -84,6 +111,7 @@ const fetchPosts = async () => {
 - **TypeScript** - Type safety
 - **Vite 8** - Build tool and dev server
 - **Tailwind CSS 4** - Utility-first CSS framework
+- **Axios** - HTTP client for API requests
 - **ESLint** - Code linting
 - **Prettier** - Code formatting
 
@@ -178,7 +206,13 @@ cd my-project-name
 npm install
 ```
 
-### Step 4: Install Tailwind CSS
+### Step 4: Install Axios (for API calls)
+
+```bash
+npm install axios
+```
+
+### Step 5: Install Tailwind CSS
 
 ```bash
 npm install -D tailwindcss postcss autoprefixer
@@ -214,6 +248,91 @@ export default {
 
 ```bash
 npm run dev
+```
+
+---
+
+## 🌐 Working with Axios
+
+Axios is installed in all projects for making HTTP requests.
+
+### Basic Usage
+
+```typescript
+import axios from 'axios'
+import { useState, useEffect } from 'react'
+
+function App() {
+  const [data, setData] = useState([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    // GET request
+    axios
+      .get('https://jsonplaceholder.typicode.com/users')
+      .then((response) => {
+        setData(response.data)
+        setLoading(false)
+      })
+      .catch((error) => {
+        console.error('Error:', error)
+        setLoading(false)
+      })
+  }, [])
+
+  return <div>{loading ? 'Loading...' : JSON.stringify(data)}</div>
+}
+```
+
+### Axios Methods
+
+```typescript
+// GET request
+axios.get('/users')
+
+// POST request
+axios.post('/users', { name: 'John', age: 30 })
+
+// PUT request
+axios.put('/users/1', { name: 'John Updated' })
+
+// PATCH request
+axios.patch('/users/1', { age: 31 })
+
+// DELETE request
+axios.delete('/users/1')
+```
+
+### Async/Await with Axios
+
+```typescript
+const fetchData = async () => {
+  try {
+    const response = await axios.get(
+      'https://jsonplaceholder.typicode.com/posts'
+    )
+    console.log(response.data)
+  } catch (error) {
+    console.error('Error:', error)
+  }
+}
+```
+
+### Axios Configuration
+
+```typescript
+// Set base URL
+axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com'
+
+// Set default headers
+axios.defaults.headers.common['Authorization'] = 'Bearer token'
+
+// Create custom instance
+const api = axios.create({
+  baseURL: 'https://jsonplaceholder.typicode.com',
+  timeout: 5000,
+  headers: { 'Content-Type': 'application/json' },
+})
 ```
 
 ---
