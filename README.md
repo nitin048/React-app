@@ -282,6 +282,52 @@ cp .env.example .env
 - **CODE_OF_CONDUCT.md** - Community guidelines
 - **.env.example** - Template for environment variables
 - **LICENSE** - MIT License
+- **.github/BRANCH_PROTECTION.md** - Branch protection setup guide
+
+---
+
+## 🔐 Branch Protection
+
+The `main` branch is **protected** - no one can push directly to it (including the owner).
+
+### How to Contribute:
+
+1. **Create a feature branch**
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+2. **Make your changes and commit**
+
+   ```bash
+   git add .
+   git commit -m "Add: your feature description"
+   ```
+
+3. **Push to the feature branch**
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+4. **Create a Pull Request on GitHub**
+   - Go to the repository on GitHub
+   - Click "Compare & pull request"
+   - Fill out the PR template
+   - Wait for review and approval
+   - Owner will merge after approval
+
+### Protection Rules:
+
+- ❌ No direct pushes to `main`
+- ✅ All changes via Pull Requests
+- ✅ Code review required (owner approval)
+- ✅ CI/CD checks must pass
+- ✅ No force pushes allowed
+- ✅ Branch cannot be deleted
+
+**See [Branch Protection Guide](.github/BRANCH_PROTECTION.md) for detailed setup instructions.**
 
 ---
 

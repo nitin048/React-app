@@ -1,0 +1,27 @@
+# Code Owners
+# These owners will be automatically requested for review when someone opens a pull request.
+# Only the owner can approve and merge pull requests.
+
+# Global owner - owns everything in the repo
+* @nitin048
+
+# Specific project owners (optional - customize as needed)
+/07-Funtions/ @nitin048
+/08-useState/ @nitin048
+/09-useState-Adv/ @nitin048
+/10-form-handling/ @nitin048
+/11-two_way_binding/ @nitin048
+/12-Notes_App/ @nitin048
+/ui_project/ @nitin048
+
+# Documentation
+*.md @nitin048
+
+# Configuration files
+*.json @nitin048
+*.yml @nitin048
+*.yaml @nitin048
+
+# Security and important files
+SECURITY.md @nitin048
+.github/ @nitin048

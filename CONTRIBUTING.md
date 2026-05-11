@@ -2,6 +2,10 @@
 
 Thank you for considering contributing to this React Learning Projects repository! 🎉
 
+## ⚠️ Important: Main Branch is Protected
+
+The `main` branch is **protected**. No one can push directly to it - not even the repository owner. All changes must go through Pull Requests with code review.
+
 ## 🤝 How to Contribute
 
 ### 1. Fork the Repository
