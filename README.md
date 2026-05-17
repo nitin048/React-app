@@ -1,22 +1,123 @@
 # React Learning Projects 🚀
 
-A collection of React projects built while learning React fundamentals, hooks, and state management using **Vite** and **Tailwind CSS**.
+A comprehensive collection of React projects built while mastering React fundamentals, hooks, state management, routing, and modern UI development using **Vite**, **TypeScript**, and **Tailwind CSS**.
+
+**Developer:** Nitin Pradhan
 
 ---
 
 ## 📚 Projects Overview
 
-| Project                | Description                                   | Key Concepts                   |
-| ---------------------- | --------------------------------------------- | ------------------------------ |
-| **07-Functions**       | React component functions and basic structure | Components, JSX                |
-| **08-useState**        | Introduction to `useState` hook               | State management               |
-| **09-useState-Adv**    | Advanced `useState` patterns                  | Complex state, arrays, objects |
-| **10-form-handling**   | Form handling with controlled components      | Forms, events, validation      |
-| **11-two_way_binding** | Two-way data binding patterns                 | Controlled inputs              |
-| **12-Notes_App**       | Complete notes app with CRUD operations       | Full app, state management     |
-| **13-localStorage**    | Working with browser localStorage             | localStorage API, persistence  |
-| **14-API_Calling**     | Fetching data from REST APIs                  | fetch, useEffect, async/await  |
-| **ui_project**         | UI components and page layouts                | Component composition, styling |
+| Project                   | Description                                                     | Key Concepts                                 | Libraries Used                    |
+| ------------------------- | --------------------------------------------------------------- | -------------------------------------------- | --------------------------------- |
+| **07-Functions**          | React component functions and basic structure                   | Components, JSX                              | React, Vite                       |
+| **08-useState**           | Introduction to `useState` hook                                 | State management                             | React, Vite                       |
+| **09-useState-Adv**       | Advanced `useState` patterns                                    | Complex state, arrays, objects               | React, Vite                       |
+| **10-form-handling**      | Form handling with controlled components                        | Forms, events, validation                    | React, Vite                       |
+| **11-two_way_binding**    | Two-way data binding patterns                                   | Controlled inputs                            | React, Vite                       |
+| **12-Notes_App**          | Complete notes app with CRUD operations                         | Full app, state management                   | React, Vite                       |
+| **13-localStorage**       | Working with browser localStorage                               | localStorage API, persistence                | React, Vite, Axios                |
+| **14-API_Calling**        | Fetching data from REST APIs                                    | fetch, useEffect, async/await                | React, Vite, Axios                |
+| **16-Gallery_Project** ⭐ | Award-winning photo gallery with likes, comments & landing page | sessionStorage, glassmorphism, animations    | React, Vite, Axios, Tailwind CSS  |
+| **17-React-Router-DOM**   | Introduction to React Router v7                                 | Routing, navigation, Link, NavLink           | React, Vite, React Router DOM v7  |
+| **18-Adv_Route**          | Advanced routing patterns and nested routes                     | Nested routes, dynamic routing, route params | React, Vite, React Router DOM, TW |
+| **ui_project**            | UI components and page layouts                                  | Component composition, styling               | React, Vite                       |
+
+---
+
+## 🌟 Featured Project: Lumina Gallery (16-Gallery_Project)
+
+A stunning, production-ready photo gallery application with modern design principles inspired by Awwwards and Untitled UI.
+
+### ✨ Features
+
+- **Landing Page**: Beautiful hero section with kinetic typography and glassmorphism effects
+- **Photo Gallery**: Curated collection from Picsum Photos API with pagination
+- **Like System**: Heart animation with sessionStorage persistence
+- **Comment System**: Add/delete comments with timestamps
+- **Image Modal**: Full-screen view with dark glass theme
+- **Responsive Design**: Mobile-first approach with smooth animations
+- **Modern UI**: Glassmorphism, 3D card effects, bokeh backgrounds, nebula clouds
+- **Navigation**: Home button, pagination controls, smooth scrolling
+
+### 🎨 Design Highlights
+
+- Award-winning design patterns from Awwwards
+- Untitled UI component library integration
+- Custom animations (float, glow, pulse, shimmer)
+- Gradient overlays and neon text effects
+- Professional footer with developer credit
+
+### 🛠️ Tech Stack
+
+- React 19 + TypeScript 6
+- Vite 8 + Tailwind CSS 4
+- Axios for API calls
+- sessionStorage for data persistence
+- Component-based architecture with custom hooks
+
+---
+
+## 🧭 React Router DOM Projects
+
+### 17-React-Router-DOM
+
+Introduction to client-side routing with React Router v7.
+
+**Key Features:**
+
+- Basic routing setup with `BrowserRouter`
+- Navigation with `Link` and `NavLink`
+- Multiple pages (Home, About, Contact)
+- Active link styling
+- Navbar component with routing
+
+**New Library:** `react-router-dom@7.15.1`
+
+### 18-Adv_Route
+
+Advanced routing patterns and techniques.
+
+**Key Features:**
+
+- Nested routes and layouts
+- Dynamic route parameters
+- Protected routes
+- 404 Not Found pages
+- Programmatic navigation
+- Route guards and redirects
+
+**Libraries:** `react-router-dom@7.15.1` + `tailwindcss@4.3.0`
+
+---
+
+## 🛠️ Tech Stack
+
+### Core Technologies
+
+- **React 19.2.4** - Latest React with new features
+- **TypeScript 6.0.2** - Type safety and better DX
+- **Vite 8.0.4** - Lightning-fast build tool
+- **React Router DOM 7.15.1** - Client-side routing (NEW)
+
+### Styling & UI
+
+- **Tailwind CSS 4.3.0** - Utility-first CSS framework (NEW)
+- **@tailwindcss/vite 4.3.0** - Vite plugin for Tailwind v4 (NEW)
+- **PostCSS 8.5.14** - CSS transformations
+- **Autoprefixer 10.5.0** - Vendor prefixes
+
+### HTTP & Data
+
+- **Axios 1.16.1** - HTTP client for API requests
+
+### Development Tools
+
+- **ESLint 9.39.4** - Code linting
+- **TypeScript ESLint 8.58.0** - TypeScript linting rules
+- **Babel 7.29.0** - JavaScript compiler
+- **React Compiler** - Automatic optimization (NEW)
+- **Prettier** - Code formatting
 
 ---
 
@@ -107,12 +208,30 @@ const createPost = async () => {
 
 ## 🛠️ Tech Stack
 
-- **React 19** - UI library
-- **TypeScript** - Type safety
-- **Vite 8** - Build tool and dev server
-- **Tailwind CSS 4** - Utility-first CSS framework
-- **Axios** - HTTP client for API requests
-- **ESLint** - Code linting
+### Core Technologies
+
+- **React 19.2.4** - Latest React with new features
+- **TypeScript 6.0.2** - Type safety and better DX
+- **Vite 8.0.4** - Lightning-fast build tool
+- **React Router DOM 7.15.1** - Client-side routing (NEW)
+
+### Styling & UI
+
+- **Tailwind CSS 4.3.0** - Utility-first CSS framework (NEW)
+- **@tailwindcss/vite 4.3.0** - Vite plugin for Tailwind v4 (NEW)
+- **PostCSS 8.5.14** - CSS transformations
+- **Autoprefixer 10.5.0** - Vendor prefixes
+
+### HTTP & Data
+
+- **Axios 1.16.1** - HTTP client for API requests
+
+### Development Tools
+
+- **ESLint 9.39.4** - Code linting
+- **TypeScript ESLint 8.58.0** - TypeScript linting rules
+- **Babel 7.29.0** - JavaScript compiler
+- **React Compiler** - Automatic optimization (NEW)
 - **Prettier** - Code formatting
 
 ---
@@ -147,7 +266,11 @@ npm --version
 2. **Navigate to any project**
 
    ```bash
-   cd 12-Notes_App
+   cd 16-Gallery_Project
+   # or
+   cd 17-React-Router-DOM
+   # or
+   cd 18-Adv_Route
    ```
 
 3. **Install dependencies**
@@ -184,70 +307,142 @@ Each project has these npm scripts:
 
 ## 🆕 Creating a New React + Vite + Tailwind Project
 
-### Step 1: Create Vite Project
+### Method 1: React + Vite + Tailwind (Recommended)
 
 ```bash
-# Using npm
+# Step 1: Create Vite project with React + TypeScript
 npm create vite@latest my-project-name -- --template react-ts
 
-# Or using yarn
-yarn create vite my-project-name --template react-ts
-```
-
-### Step 2: Navigate to Project
-
-```bash
+# Step 2: Navigate to project
 cd my-project-name
-```
 
-### Step 3: Install Dependencies
-
-```bash
+# Step 3: Install dependencies
 npm install
-```
 
-### Step 4: Install Axios (for API calls)
+# Step 4: Install Tailwind CSS v4 (Latest)
+npm install -D tailwindcss@next @tailwindcss/vite@next
 
-```bash
+# Step 5: Install Axios (for API calls)
 npm install axios
+
+# Step 6: Install React Router (for routing)
+npm install react-router-dom
 ```
 
-### Step 5: Install Tailwind CSS
+### Method 2: Configure Tailwind CSS v4
 
-```bash
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+**Update `vite.config.ts`:**
+
+```ts
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+})
 ```
-
-### Step 5: Configure Tailwind
-
-**Update `tailwind.config.js`:**
-
-```js
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-
-### Step 6: Add Tailwind to CSS
 
 **Update `src/index.css`:**
 
 ```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+/* Your custom styles here */
 ```
 
-### Step 7: Start Development
+### Method 3: Start Development
 
 ```bash
 npm run dev
+```
+
+---
+
+## 🧭 Setting Up React Router DOM
+
+### Installation
+
+```bash
+npm install react-router-dom
+```
+
+### Basic Setup
+
+**Update `src/main.tsx`:**
+
+```tsx
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
+import App from './App.tsx'
+import './index.css'
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
+)
+```
+
+**Update `src/App.tsx`:**
+
+```tsx
+import { Routes, Route, Link } from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+
+function App() {
+  return (
+    <div>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </div>
+  )
+}
+
+export default App
+```
+
+### Advanced Routing Features
+
+```tsx
+// Dynamic routes
+<Route path="/user/:id" element={<UserProfile />} />
+
+// Nested routes
+<Route path="/dashboard" element={<Dashboard />}>
+  <Route path="profile" element={<Profile />} />
+  <Route path="settings" element={<Settings />} />
+</Route>
+
+// 404 Not Found
+<Route path="*" element={<NotFound />} />
+
+// Programmatic navigation
+import { useNavigate } from 'react-router-dom'
+
+function MyComponent() {
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate('/about')
+  }
+
+  return <button onClick={handleClick}>Go to About</button>
+}
 ```
 
 ---
@@ -512,10 +707,25 @@ The `main` branch is **protected** - no one can push directly to it (including t
 
 ## 📚 Learning Resources
 
-- [React Documentation](https://react.dev/)
-- [Vite Documentation](https://vite.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+### Official Documentation
+
+- [React 19 Documentation](https://react.dev/) - Latest React features
+- [Vite Documentation](https://vite.dev/) - Build tool guide
+- [Tailwind CSS v4 Documentation](https://tailwindcss.com/docs) - Utility-first CSS
+- [React Router v7 Documentation](https://reactrouter.com/) - Client-side routing (NEW)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/) - TypeScript guide
+- [Axios Documentation](https://axios-http.com/docs/intro) - HTTP client
+
+### Design Resources
+
+- [Awwwards](https://www.awwwards.com/) - Award-winning web design inspiration
+- [Untitled UI](https://www.untitledui.com/) - Professional UI component library
+- [Tailwind UI](https://tailwindui.com/) - Official Tailwind components
+
+### API Resources
+
+- [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Free fake REST API
+- [Picsum Photos](https://picsum.photos/) - Random image API
 
 ---
 
@@ -527,9 +737,15 @@ These projects are part of my React learning journey, focusing on:
 - ✅ State management with hooks (`useState`, `useEffect`)
 - ✅ Form handling and validation
 - ✅ Event handling and user interactions
-- ✅ Styling with Tailwind CSS utility classes
+- ✅ Client-side routing with React Router v7 (NEW)
+- ✅ API integration with Axios
+- ✅ Browser storage (localStorage, sessionStorage)
+- ✅ Styling with Tailwind CSS v4 utility classes (NEW)
 - ✅ TypeScript for type safety
-- ✅ Modern build tools (Vite)
+- ✅ Modern build tools (Vite 8)
+- ✅ Award-winning UI/UX design patterns (NEW)
+- ✅ Glassmorphism and modern animations (NEW)
+- ✅ Component-based architecture with custom hooks (NEW)
 
 ---
 
