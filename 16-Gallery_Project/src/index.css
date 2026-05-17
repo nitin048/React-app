@@ -565,3 +565,25 @@
     transform: rotate(360deg);
   }
 }
+
+/* Float Animation - Subtle vertical movement */
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: floatAnimation 3s ease-in-out infinite;
+}
+
+/* Prevent body scroll when needed */
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
