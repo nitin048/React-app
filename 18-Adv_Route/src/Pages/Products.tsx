@@ -1,10 +1,20 @@
-import { Link } from 'react-router-dom'
+import { Link, Outlet} from 'react-router-dom'
+import ReturnHome from '../Components/ReturnHome'
 
 const Products = () => {
   return (
-    <div>
-      <h1>Products</h1>
-      <Link to="/Products/Men">Men's Collection</Link>
+    <div >
+      <ReturnHome/>
+      <div className="flex justify-center gap-10 py-4">
+        <Link className="text-xl font-semibold" to="Men">
+          Men
+        </Link>
+        <Link className="text-xl font-semibold" to="Women">
+          Women
+        </Link>
+      </div>
+      <Outlet/>
+      
     </div>
   )
 }
