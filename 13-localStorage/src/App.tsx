@@ -1,5 +1,3 @@
-import React from 'react'
-
 const App = () => {
   //** made localstorage */
   // const user = {
@@ -9,9 +7,8 @@ const App = () => {
   // }
   // localStorage.setItem('user', JSON.stringify(user))
 
-const user = JSON.parse(localStorage.getItem('user'))
+  const user = JSON.parse(localStorage.getItem('user'))
 
-  console.log(user)
   return <div>App</div>
 }
 

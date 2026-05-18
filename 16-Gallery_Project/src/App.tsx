@@ -24,7 +24,6 @@ const App = () => {
             `https://picsum.photos/v2/list?page=${index}&limit=10`
           )
           setuserData(response.data)
-          console.log(response.data)
         } catch (error) {
           console.error('Error fetching data:', error)
         }

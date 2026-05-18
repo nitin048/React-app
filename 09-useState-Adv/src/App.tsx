@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const App = () => {
   const [num, setNum] = useState([1, 12, 33, 4, 4, 5, 6])

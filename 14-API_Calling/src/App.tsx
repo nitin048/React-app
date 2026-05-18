@@ -23,7 +23,7 @@ const App = () => {
     const response = await axios.get(
       'https://jsonplaceholder.typicode.com/users'
     )
-    console.log(response)
+    // Response data available in response.data
   }
 
   const [data, setData] = useState<PicsumImage[]>([])
@@ -33,7 +33,6 @@ const App = () => {
       'https://picsum.photos/v2/list'
     )
     setData(rspns.data)
-    console.log(rspns.data)
   }
 
   return (

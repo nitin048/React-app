@@ -1,24 +1,15 @@
-import React from "react";
-
 const App = () => {
   return (
     <div>
       <div
         className="box"
         onMouseMove={(elem) => {
-          console.log("this is x-axis", elem.clientX);
-          console.log("this is y-axis", elem.clientY);
+          // Track mouse position
         }}
       ></div>
       <div
         onWheel={(elem) => {
-          if(elem.deltaY>0){
-              console.log("page is scrolling seedha",elem.deltaY);
-          }
-          else{
-            console.log("page is scrolling ulta",elem.deltaY);
-          }
-          
+          // Track scroll direction
         }}
       >
         <div className="page1"></div>
@@ -32,7 +23,7 @@ const App = () => {
         <button>Click</button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
