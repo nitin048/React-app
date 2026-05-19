@@ -1,14 +1,13 @@
+import NavBar from './NavBar'
+import PageContent from './PageContent'
 
-import NavBar from './navBar'
-import PageContent from './pageContent'
-
-const page01 = (props) => {
+const Page01 = (props) => {
   return (
     <div>
-    <NavBar/>
-    <PageContent users={props.users}/>
+      <NavBar />
+      <PageContent users={props.users} />
     </div>
   )
 }
 
-export default page01
+export default Page01

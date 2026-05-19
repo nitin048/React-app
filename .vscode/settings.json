@@ -39,5 +39,11 @@
   "editor.tabCompletion": "on",
   // CSS specific settings
   "css.completion.triggerPropertyValueCompletion": true,
-  "css.completion.completePropertyWithSemicolon": true
+  "css.completion.completePropertyWithSemicolon": true,
+  // Enable React snippets
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "typescript.suggest.completeFunctionCalls": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "folder-color.pathColors": []
 }
