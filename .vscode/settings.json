@@ -44,5 +44,6 @@
   "editor.snippetSuggestions": "top",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "typescript.suggest.completeFunctionCalls": true,
-  "javascript.suggest.completeFunctionCalls": true
+  "javascript.suggest.completeFunctionCalls": true,
+  "folder-color.pathColors": []
 }

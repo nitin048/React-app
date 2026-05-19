@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const App = () => {
-  const [title, settitle] = useState('')
+  const [title, setTitle] = useState('')
 
   return (
     <div>
@@ -16,7 +16,7 @@ const App = () => {
           type="text"
           placeholder="enter your value"
           onChange={(e) => {
-            settitle(e.target.value)
+            setTitle(e.target.value)
           }}
         />
         <button className="btn">Click</button>

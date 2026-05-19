@@ -1,4 +1,4 @@
-const page02 = () => {
+const Page02 = () => {
   return (
     <div className="bg-white font-sans text-center">
       <span> desiged by </span> <br />
@@ -10,4 +10,4 @@ const page02 = () => {
   )
 }
 
-export default page02
+export default Page02

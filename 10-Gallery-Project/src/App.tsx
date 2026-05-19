@@ -8,8 +8,8 @@ import { Pagination } from './components/Pagination'
 import { useImageInteractions } from './hooks/useImageInteractions'
 
 const App = () => {
-  const [userData, setuserData] = useState<PicsumImage[]>([])
-  const [index, setindex] = useState(1)
+  const [userData, setUserData] = useState<PicsumImage[]>([])
+  const [index, setIndex] = useState(1)
   const [selectedImage, setSelectedImage] = useState<PicsumImage | null>(null)
   const [showGallery, setShowGallery] = useState(false)
 
@@ -23,7 +23,7 @@ const App = () => {
           const response = await axios.get<PicsumImage[]>(
             `https://picsum.photos/v2/list?page=${index}&limit=10`
           )
-          setuserData(response.data)
+          setUserData(response.data)
         } catch (error) {
           console.error('Error fetching data:', error)
         }
@@ -43,8 +43,8 @@ const App = () => {
 
   const handlePrevious = () => {
     if (index !== 1) {
-      setindex(index - 1)
-      setuserData([])
+      setIndex(index - 1)
+      setUserData([])
       // Scroll to gallery section to prevent jumping
       setTimeout(() => {
         document.getElementById('gallery-section')?.scrollIntoView({
@@ -56,8 +56,8 @@ const App = () => {
   }
 
   const handleNext = () => {
-    setindex(index + 1)
-    setuserData([])
+    setIndex(index + 1)
+    setUserData([])
     // Scroll to gallery section to prevent jumping
     setTimeout(() => {
       document.getElementById('gallery-section')?.scrollIntoView({
@@ -82,8 +82,8 @@ const App = () => {
 
   const handleHome = () => {
     setShowGallery(false)
-    setindex(1)
-    setuserData([])
+    setIndex(1)
+    setUserData([])
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
