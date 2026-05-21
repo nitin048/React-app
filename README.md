@@ -71,8 +71,8 @@ cd reactLearning
 ### **Run Any Project**
 
 ```bash
-# Navigate to project folder
-cd 13-Context-API
+# Navigate to projects folder, then choose a project
+cd projects/13-Context-API
 
 # Install dependencies
 npm install
@@ -83,6 +83,8 @@ npm run dev
 # Build for production
 npm run build
 ```
+
+> 💡 **New to this repo?** Check out [GETTING_STARTED.md](./GETTING_STARTED.md) for a detailed beginner's guide!
 
 ---
 
@@ -320,30 +322,37 @@ Global state management with Context API.
 
 ```
 reactLearning/
-├── docs/                          # Documentation
-│   └── NAMING_CONVENTIONS.md      # Coding standards
-├── 01-Functions/                  # Event handling
-├── 02-useState/                   # State basics
-├── 03-useState-Advanced/          # Advanced state
-├── 04-Form-Handling/              # Forms
-├── 05-Two-Way-Binding/            # Controlled components
-├── 06-Notes-App/                  # CRUD app
-├── 07-LocalStorage/               # Browser storage
-├── 08-API-Calling/                # API integration
-├── 09-useEffect/                  # Side effects
-├── 10-Gallery-Project/            # Image gallery ⭐
-├── 11-React-Router-DOM/           # Basic routing
-├── 12-Advanced-Routing/           # Advanced routing ⭐
-├── 13-Context-API/                # Context API ⭐⭐
-├── ui_project/                    # UI experiments
-├── .vscode/                       # VS Code settings
-├── .github/                       # GitHub workflows
-├── CHANGELOG.md                   # Version history
-├── CODE_OF_CONDUCT.md             # Community guidelines
-├── CONTRIBUTING.md                # Contribution guide
-├── LICENSE                        # MIT License
-├── SECURITY.md                    # Security policy
-└── README.md                      # This file
+├── projects/                      # 🎯 All Learning Projects
+│   ├── 01-Functions/              # Event handling
+│   ├── 02-useState/               # State basics
+│   ├── 03-useState-Advanced/      # Advanced state
+│   ├── 04-Form-Handling/          # Forms
+│   ├── 05-Two-Way-Binding/        # Controlled components
+│   ├── 06-Notes-App/              # CRUD app
+│   ├── 07-LocalStorage/           # Browser storage
+│   ├── 08-API-Calling/            # API integration
+│   ├── 09-useEffect/              # Side effects
+│   ├── 10-Gallery-Project/        # Image gallery ⭐
+│   ├── 11-React-Router-DOM/       # Basic routing
+│   ├── 12-Advanced-Routing/       # Advanced routing ⭐
+│   ├── 13-Context-API/            # Context API ⭐⭐
+│   └── ui_project/                # UI experiments
+├── docs/                          # 📚 Documentation
+│   ├── guides/                    # Additional guides
+│   │   ├── COMMIT_GUIDE.md        # Commit guidelines
+│   │   └── FINAL_SUMMARY.md       # Project summary
+│   ├── CHANGELOG.md               # Version history
+│   ├── CODE_OF_CONDUCT.md         # Community guidelines
+│   ├── CONTRIBUTING.md            # Contribution guide
+│   ├── NAMING_CONVENTIONS.md      # Coding standards
+│   └── SECURITY.md                # Security policy
+├── .vscode/                       # ⚙️ VS Code settings
+├── .github/                       # 🔧 GitHub workflows
+├── .env.example                   # Environment template
+├── .gitignore                     # Git ignore rules
+├── GETTING_STARTED.md             # 🚀 Quick start guide
+├── LICENSE                        # ⚖️ MIT License
+└── README.md                      # 📖 This file
 ```
 
 ---
@@ -437,15 +446,18 @@ reactLearning/
 
 ### **Project Documentation**
 
-- [Naming Conventions](./docs/NAMING_CONVENTIONS.md)
-- [Changelog](./CHANGELOG.md)
-- [Contributing Guide](./CONTRIBUTING.md)
+- [📚 Documentation Hub](./docs/README.md) - All documentation in one place
+- [🚀 Getting Started Guide](./GETTING_STARTED.md) - Quick start for beginners
+- [📑 Project Index](./docs/PROJECT_INDEX.md) - Browse all projects
+- [📝 Naming Conventions](./docs/NAMING_CONVENTIONS.md) - Code standards
+- [📜 Changelog](./docs/CHANGELOG.md) - Version history
+- [🤝 Contributing Guide](./docs/CONTRIBUTING.md) - How to contribute
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read our [Contributing Guide](./CONTRIBUTING.md) for details on:
+Contributions are welcome! Please read our [Contributing Guide](./docs/CONTRIBUTING.md) for details on:
 
 - Code of conduct
 - Development process
@@ -480,7 +492,7 @@ See [Naming Conventions Guide](./docs/NAMING_CONVENTIONS.md) for complete detail
 
 ## 🔒 Security
 
-Please report security vulnerabilities to the repository maintainer. See [SECURITY.md](./SECURITY.md) for details.
+Please report security vulnerabilities to the repository maintainer. See [SECURITY.md](./docs/SECURITY.md) for details.
 
 ---
 
